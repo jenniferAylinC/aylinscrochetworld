@@ -107,6 +107,12 @@ ${mensaje}`;
         });
     });
 
+    // Alerta para categoría llaveros
+    const btnLlaveros = document.querySelector('[data-categoria="llaveros"]');
+    btnLlaveros.addEventListener('click', function() {
+        alert('¡Importante!\nEl precio mostrado incluye 2 unidades del llavero seleccionado más costos de envío.');
+    });
+
     // Funcionalidad del Modal
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');

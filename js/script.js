@@ -106,4 +106,37 @@ ${mensaje}`;
             });
         });
     });
+
+    // Funcionalidad del Modal
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalClose = document.querySelector('.modal-close');
+
+    // Agregar click event a todas las imágenes de productos
+    document.querySelectorAll('.producto-card img').forEach(img => {
+        img.addEventListener('click', function() {
+            modalImg.src = this.src;
+            modal.classList.add('active');
+        });
+    });
+
+    // Cerrar modal
+    modalClose.addEventListener('click', function(e) {
+        e.stopPropagation();
+        modal.classList.remove('active');
+    });
+
+    // Cerrar modal al hacer click fuera de la imagen
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+
+    // Cerrar modal con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+        }
+    });
 });

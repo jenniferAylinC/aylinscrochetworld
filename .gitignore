@@ -1,6 +1,7 @@
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Archivos de IDE/editor
 .vscode/
@@ -10,6 +11,9 @@ Thumbs.db
 # Archivos temporales
 *.log
 *.tmp
+temp/
 
-# Dependencias
+# Dependencias y otros
 node_modules/
+*.zip
+*.rar

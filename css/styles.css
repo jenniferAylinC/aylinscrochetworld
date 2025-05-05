@@ -269,10 +269,12 @@ h2::after {
 
 .fa-instagram:hover {
     color: #E1306C;
+    text-shadow: 0 0 15px rgba(225, 48, 108, 0.6);
 }
 
 .fa-facebook:hover {
     color: #4267B2;
+    text-shadow: 0 0 15px rgba(66, 103, 178, 0.6);
 }
 
 /* Sección de Productos */
